@@ -1,0 +1,15 @@
+[package]
+name = "extractor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+log = "0.4.28"
+chrono = "0.4.42"
+colored = "2.1"
+fern = "0.7.1"
+file-rotate = "0.7"
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+scraper = "0.13"
