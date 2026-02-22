@@ -72,6 +72,7 @@ fn create_log_to_file(options: &LoggerOptions) -> Dispatch {
         AppendCount::new(2),
         ContentLimit::Bytes(1024 * 1024 * 10),
         Compression::None,
+		None,
     );
 
     let mut max = options.max_file_line_len.clone();

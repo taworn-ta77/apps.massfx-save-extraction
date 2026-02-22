@@ -11,5 +11,5 @@ chrono = "0.4.42"
 colored = "2.1"
 fern = "0.7.1"
 file-rotate = "0.7"
-reqwest = { version = "0.11", features = ["json", "blocking"] }
 scraper = "0.13"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
